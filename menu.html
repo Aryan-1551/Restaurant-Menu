@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Indian Cuisine</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #8B0000;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #8B0000;
+        }
+
+        /* Menu Section */
+        .menu-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-section h2 {
+            font-size: 2.5rem;
+            color: #8B0000;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Menu Grid */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Menu Card */
+        .menu-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-details {
+            padding: 20px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.8rem;
+            color: #8B0000;
+            margin-bottom: 10px;
+        }
+
+        .menu-details p {
+            font-size: 1rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .menu-details .price {
+            font-size: 1.2rem;
+            color: #B22222;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <H1>FLAVOURS OF INDIA</H1>
+                </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservations">Reservations</a></li>
+            </ul>
+        </nav>
+        <h1>Our Menu - Indian Cuisine</h1>
+        <p>Explore our wide selection of authentic Indian dishes, from appetizers to main courses, all made with the finest ingredients and traditional spices.</p>
+    </header>
+
+    <section class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <!-- Samosa -->
+            <div class="menu-card">
+                <img src="images/samosa.jpg" alt="Samosa">
+                <div class="menu-details">
+                    <h3>Samosa</h3>
+                    <p>Golden, crispy pastry stuffed with spiced potatoes, peas, and herbs, served with mint and tamarind chutney.</p>
+                    <p class="price">₹100</p>
+                </div>
+            </div>
+
+            <!-- Paneer Tikka -->
+            <div class="menu-card">
+                <img src="images/paneer-tikka.jpg" alt="Paneer Tikka">
+                <div class="menu-details">
+                    <h3>Paneer Tikka</h3>
+                    <p>Marinated cottage cheese cubes, grilled to perfection and served with a smoky flavor and a hint of lemon.</p>
+                    <p class="price">₹300</p>
+                </div>
+            </div>
+
+            <!-- Aloo Tikki -->
+            <div class="menu-card">
+                <img src="images/aloo-tikki.jpg" alt="Aloo Tikki">
+                <div class="menu-details">
+                    <h3>Aloo Tikki</h3>
+                    <p>Spiced potato patties, shallow-fried until crispy and golden, served with a drizzle of chutney.</p>
+                    <p class="price">₹200</p>
+                </div>
+            </div>
+
+            <!-- Chicken Seekh Kebab -->
+            <div class="menu-card">
+                <img src="images/chicken-seekh-kebab.jpg" alt="Chicken Seekh Kebab">
+                <div class="menu-details">
+                    <h3>Chicken Seekh Kebab</h3>
+                    <p>Juicy minced chicken mixed with spices, herbs, and grilled on skewers for a smoky flavor.</p>
+                    <p class="price">₹500</p>
+                </div>
+            </div>
+
+            <!-- Papdi Chaat -->
+            <div class="menu-card">
+                <img src="images/papdi-chaat.jpg" alt="Papdi Chaat">
+                <div class="menu-details">
+                    <h3>Papdi Chaat</h3>
+                    <p>A medley of crisp papdi, yogurt, potatoes, chickpeas, and tamarind chutney topped with sev.</p>
+                    <p class="price">₹150</p>
+                </div>
+            </div>
+
+            <!-- Fish Amritsari -->
+            <div class="menu-card">
+                <img src="images/fish-amritsari.jpg" alt="Fish Amritsari">
+                <div class="menu-details">
+                    <h3>Fish Amritsari</h3>
+                    <p>Spicy and tangy battered fish, fried to a golden perfection and garnished with coriander.</p>
+                    <p class="price">₹700</p>
+                </div>
+            </div>
+
+            <!-- Dahi Puri -->
+            <div class="menu-card">
+                <img src="images/dahi-puri.jpg" alt="Dahi Puri">
+                <div class="menu-details">
+                    <h3>Dahi Puri</h3>
+                    <p>Hollow puris filled with spicy potatoes, tangy tamarind, and sweet yogurt.</p>
+                    <p class="price">₹200</p>
+                </div>
+            </div>
+
+            <!-- Veg Spring Rolls -->
+            <div class="menu-card">
+                <img src="images/veg-spring-rolls.jpg" alt="Veg Spring Rolls">
+                <div class="menu-details">
+                    <h3>Veg Spring Rolls</h3>
+                    <p>Crispy rolls filled with spiced veggies, served with sweet and spicy dipping sauce.</p>
+                    <p class="price">₹150</p>
+                </div>
+            </div>
+
+            <!-- Pani Puri -->
+            <div class="menu-card">
+                <img src="images/pani-puri.jpg" alt="Pani Puri">
+                <div class="menu-details">
+                    <h3>Pani Puri</h3>
+                    <p>Crunchy puris filled with spicy and tangy water, potatoes, and chickpeas.</p>
+                    <p class="price">₹100</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fine Dining Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

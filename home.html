@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Home</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #8B0000;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover {
+            background-color: #8B0000;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            background: url('images/restaurant.jpg') no-repeat center center / cover;
+            padding: 80px 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            background-color: #FFD700;
+            color: #8B0000;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF8C00;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #FFF5EE;
+        }
+
+        .menu h2 {
+            font-size: 2.5rem;
+            color: #8B0000;
+            margin-bottom: 30px;
+        }
+
+        .menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            max-width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-item h3 {
+            color: #8B0000;
+            font-size: 1.8rem;
+            margin-top: 15px;
+        }
+
+        .menu-item p {
+            color: #555;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: #B22222;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        p.p{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>FLAVOURS OF INDIA</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to Our Restaurant</h1>
+        <p class="p">Indulge in a delightful dining experience with our expertly crafted dishes. Enjoy an unforgettable culinary journey!</p>
+        <a href="RESERVATIONS.HTML" class="btn">Make a Reservation</a>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Menu Highlights</h2>
+        <div class="menu-list">
+            <!-- Sample Menu Items -->
+            <div class="menu-card">
+                <img src="images/samosa.jpg" alt="Samosa">
+                <div class="menu-details">
+                    <h3>Samosa</h3>
+                    <p>Golden, crispy pastry stuffed with spiced potatoes, peas, and herbs, served with mint and tamarind chutney.</p>
+                    <p class="price">₹100</p>
+                </div>
+            </div>
+
+            <!-- Paneer Tikka -->
+            <div class="menu-card">
+                <img src="images/paneer-tikka.jpg" alt="Paneer Tikka">
+                <div class="menu-details">
+                    <h3>Paneer Tikka</h3>
+                    <p>Marinated cottage cheese cubes, grilled to perfection and served with a smoky flavor and a hint of lemon.</p>
+                    <p class="price">₹300</p>
+                </div>
+            </div>
+
+            <!-- Aloo Tikki -->
+            <div class="menu-card">
+                <img src="images/aloo-tikki.jpg" alt="Aloo Tikki">
+                <div class="menu-details">
+                    <h3>Aloo Tikki</h3>
+                    <p>Spiced potato patties, shallow-fried until crispy and golden, served with a drizzle of chutney.</p>
+                    <p class="price">₹200</p>
+                </div>
+            </div>
+
+            <!-- Chicken Seekh Kebab -->
+            <div class="menu-card">
+                <img src="images/chicken-seekh-kebab.jpg" alt="Chicken Seekh Kebab">
+                <div class="menu-details">
+                    <h3>Chicken Seekh Kebab</h3>
+                    <p>Juicy minced chicken mixed with spices, herbs, and grilled on skewers for a smoky flavor.</p>
+                    <p class="price">₹500</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>&copy; 2024 Fine Dining Restaurant. All rights reserved.</p>
+    </section>
+</body>
+</html>
